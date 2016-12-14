@@ -70,7 +70,7 @@ path given as argument by user.
 It will split all the pages and creates multiple pdf file with page numbers of the pdf 
 file as prefix, eg 1_MyFile.PDF, 2_MyFile.PDF etc.
 
--Split PDF Valid Commands:-
+Split PDF Valid Commands:
 
 	*PDFPlus.py S*
 This command will split all the pages from PDF File kept in C:\Temp\PDFPlus directory 
@@ -88,7 +88,7 @@ from the path given as argument by user.
 It will extract the given page number and creates separate pdf file with the page numbers of 
 the pdf file as prefix, eg 1_MyFile.PDF, 2_MyFile.PDF etc.
 
--Extract PDF Valid Commands:-
+Extract PDF Valid Commands:
 
 	PDFPlus.py E <PageNumber>
 This command will extract page <PageNumber> from a PDF File kept in C:\Temp\PDFPlus directory 
