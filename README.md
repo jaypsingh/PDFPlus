@@ -1,5 +1,6 @@
 # PDFPlus
-Structure contains:
+
+###Structure contains:
 -------------------
 1. Src: It contains the source file PDFPlus.py
 2. Release_Package: It contains the PDFPlus release package.
@@ -10,34 +11,34 @@ Note: If you are using the release package please use PDFPlus.exe instead of PDF
 Rest all syntax and command remains same.
 Application was devloped and tested on windows.  
 
-Dependency:
+###Dependency:
 -----------
 For doing any PDF operation please keep the PDF you want to process in C:\Temp\PDFPlus path.
 For help on PDFPlus type the command:
-	*PDFPlus.py help*
+	PDFPlus.py help
 
 
--PDFPlus contains the implementation for the below functionalities:-
+*PDFPlus contains the implementation for the below functionalities:*
 
 
-1. ReadPDF() - R :
+### 1. ReadPDF() - R :
 -------------
 This method reads the PDF File and writes the PDF File contents text file.
 
 Read PDF Valid Commands:
-	*PDFPlus.py <pagenum>:*
+	PDFPlus.py <pagenum>:
 This command will read the text (only) from PDF file present in C:\Temp\PDFPlus directory. 
 If More than one file is present both the files will be read. The text will be read and 
 written to a .txt file in c:\Temp\PDFPlus directly containing the PDF contents.
 
 
-	*PDFPlus.py R <fileName> or <pagenum>:*
+	PDFPlus.py R <fileName> or <pagenum>:
 This command will read the text (only) from PDF file present in C:\Temp\PDFPlus Directory. 
 If More than one file is present both the files will be read. The text will be read and 
 written to a .txt file in c:\Temp\PDFPlus directly containing the PDF contents.
 
 
-	*PDFPlus.py R <filename> <pagenum>:*
+	PDFPlus.py R <filename> <pagenum>:
 This command will read the text (only) from PDF file <filename> present in the 
 C:\Temp\PDFPlus Directory. <filename> can also be complete pdf path.
 If this argument is missing the file present in default path will be read. 
@@ -49,7 +50,7 @@ a range like 5-7, 10-15 etc
 seprate page numbers like 5,8,21,25
 <TODO> mix of range and separate pages like 5,8,10-15
 
-2. MergePDF() - M :
+### 2. MergePDF() - M :
 --------------
 This method merges two or more PDF File which is kept in C:\Temp\PDFPlus directory.
 This method currently works only on the files kept in C:\Temp|PDFPlus directory.
@@ -58,11 +59,11 @@ file with name MergedByPDFPlus.pdf.
 
 Merge PDF Valid Commands:
 
-	*PDFPlus.py M*
+	PDFPlus.py M
 This command will merge all the PDF Files kept in C:\Temp\PDFPlus directory.
 
 
-3. SplitPDF() - S:
+### 3. SplitPDF() - S:
 ---------------
 This method splits a PDF File which is kept in C:\Temp\PDFPlus directory or, from the 
 path given as argument by user.
@@ -80,7 +81,7 @@ This command will split all the pages from PDF File <FileName> kept in <FullPath
 and create new files with page number as prefix.
 
 
-4. ExtractPDF() - E:
+### 4. ExtractPDF() - E:
 -----------------
 This method extracts a page number PDF File which is kept in C:\Temp\PDFPlus directory or, 
 from the path given as argument by user.
@@ -89,13 +90,13 @@ the pdf file as prefix, eg 1_MyFile.PDF, 2_MyFile.PDF etc.
 
 -Extract PDF Valid Commands:-
 
-	*PDFPlus.py E <PageNumber>*
+	PDFPlus.py E <PageNumber>
 This command will extract page <PageNumber> from a PDF File kept in C:\Temp\PDFPlus directory 
 and create new files with page number as prefix.
 Page number can also be in range format like 5-8, 2-15 etc or or multiple comma separated page 
 numbers will also work like 5,6,13,18
 
-	*PDFPlus.py E <FullPath\FileName> <PageNum>*
+	PDFPlus.py E <FullPath\FileName> <PageNum>
 This command will extract page <PageNum> from PDF File <FileName> kept in <FullPath> directory 
 and create new files with page number as prefix. 
 Please note that if full path of the file is not given in argument the program will assume the file 
